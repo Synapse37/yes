@@ -1,0 +1,232 @@
+-- Instances:
+
+local sbgui = Instance.new("ScreenGui")
+local sbgui_2 = Instance.new("Frame")
+local Spinbot = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local SCAR20 = Instance.new("TextButton")
+local AWP = Instance.new("TextButton")
+local SSG08 = Instance.new("TextButton")
+local Spinbot2 = Instance.new("TextButton")
+
+--Properties:
+
+sbgui.Name = "sbgui"
+sbgui.Parent = game.Workspace
+
+sbgui_2.Name = "sbgui"
+sbgui_2.Parent = sbgui
+sbgui_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+sbgui_2.Position = UDim2.new(0.704169929, 0, 0.156019658, 0)
+sbgui_2.Size = UDim2.new(0, 233, 0, 357)
+sbgui_2.Style = Enum.FrameStyle.RobloxRound
+sbgui_2.Active = true
+sbgui_2.Draggable = true
+
+Spinbot.Name = "Spinbot"
+Spinbot.Parent = sbgui_2
+Spinbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spinbot.Position = UDim2.new(0.0351418555, 0, 0.179464459, 0)
+Spinbot.Size = UDim2.new(0, 200, 0, 50)
+Spinbot.Style = Enum.ButtonStyle.RobloxRoundButton
+Spinbot.Font = Enum.Font.SourceSans
+Spinbot.Text = "Spinbot"
+Spinbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spinbot.TextSize = 14.000
+Spinbot.MouseButton1Down:connect(function()
+	Scripthere
+end)
+
+Frame.Parent = sbgui_2
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0, -7, 0, 50)
+Frame.Size = UDim2.new(0, 232, 0, 7)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(-0.00193983316, 0, -8.41540909, 0)
+TextLabel.Size = UDim2.new(0, 232, 0, 57)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "SYNAPSE's Fake Spinbot"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+SCAR20.Name = "SCAR-20"
+SCAR20.Parent = sbgui_2
+SCAR20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SCAR20.Position = UDim2.new(0.0300429184, 0, 0.493086278, 0)
+SCAR20.Size = UDim2.new(0, 200, 0, 50)
+SCAR20.Style = Enum.ButtonStyle.RobloxRoundButton
+SCAR20.Font = Enum.Font.SourceSans
+SCAR20.Text = "SCAR-20"
+SCAR20.TextColor3 = Color3.fromRGB(0, 0, 0)
+SCAR20.TextSize = 14.000
+SCAR20.MouseButton1Down:connect(function()
+	Scripthere
+end)
+
+AWP.Name = "AWP"
+AWP.Parent = sbgui_2
+AWP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AWP.Position = UDim2.new(0.0265580621, 0, 0.651975453, 0)
+AWP.Size = UDim2.new(0, 200, 0, 50)
+AWP.Style = Enum.ButtonStyle.RobloxRoundButton
+AWP.Font = Enum.Font.SourceSans
+AWP.Text = "AWP"
+AWP.TextColor3 = Color3.fromRGB(0, 0, 0)
+AWP.TextSize = 14.000
+AWP.MouseButton1Down:connect(function()
+	Scripthere
+end)
+
+SSG08.Name = "SSG 08"
+SSG08.Parent = sbgui_2
+SSG08.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SSG08.Position = UDim2.new(0.0265580639, 0, 0.812799931, 0)
+SSG08.Size = UDim2.new(0, 200, 0, 50)
+SSG08.Style = Enum.ButtonStyle.RobloxRoundButton
+SSG08.Font = Enum.Font.SourceSans
+SSG08.Text = "SSG 08"
+SSG08.TextColor3 = Color3.fromRGB(0, 0, 0)
+SSG08.TextSize = 14.000
+SSG08.MouseButton1Down:connect(function()
+	Scripthere
+end)
+
+Spinbot2.Name = "Spinbot 2"
+Spinbot2.Parent = sbgui_2
+Spinbot2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spinbot2.Position = UDim2.new(0.0284895841, 0, 0.335230142, 0)
+Spinbot2.Size = UDim2.new(0, 200, 0, 50)
+Spinbot2.Style = Enum.ButtonStyle.RobloxRoundButton
+Spinbot2.Font = Enum.Font.SourceSans
+Spinbot2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spinbot2.TextSize = 14.000
+Spinbot2.MouseButton1Down:connect(function()
+	Scripthere
+end)
+
+-- Scripts:
+
+local function DXPJQPE_fake_script() -- Spinbot.LocalScript 
+	local script = Instance.new('LocalScript', Spinbot)
+
+	local Id = "rbxassetid://6967760122"
+	script.Parent.MouseButton1Click:Connect(function()
+		local AnimationNew = Instance.new("Animation")
+		AnimationNew.AnimationId = Id
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(AnimationNew)
+		Humanoid:Play()
+	end)
+end
+coroutine.wrap(DXPJQPE_fake_script)()
+local function LABRPKA_fake_script() -- Frame.rgb 
+	local script = Instance.new('LocalScript', Frame)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(LABRPKA_fake_script)()
+local function XSRTDE_fake_script() -- sbgui_2.LocalScript 
+	local script = Instance.new('LocalScript', sbgui_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(XSRTDE_fake_script)()
+local function JXQDL_fake_script() -- SCAR20.LocalScript 
+	local script = Instance.new('LocalScript', SCAR20)
+
+	local p = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local tool = script.parent.PeaGun:Clone()
+		tool.Parent = p.Backpack
+	
+	
+	end)
+end
+coroutine.wrap(JXQDL_fake_script)()
+local function KPSYPM_fake_script() -- AWP.LocalScript 
+	local script = Instance.new('LocalScript', AWP)
+
+	local p = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local tool = script.parent.PeaGun:Clone()
+		tool.Parent = p.Backpack
+	
+	
+	end)
+end
+coroutine.wrap(KPSYPM_fake_script)()
+local function UBDVM_fake_script() -- SSG08.LocalScript 
+	local script = Instance.new('LocalScript', SSG08)
+
+	local p = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local tool = script.parent.PeaGun:Clone()
+		tool.Parent = p.Backpack
+	
+	
+	end)
+end
+coroutine.wrap(UBDVM_fake_script)()
+local function KRPF_fake_script() -- Spinbot2.LocalScript 
+	local script = Instance.new('LocalScript', Spinbot2)
+
+	local Id = "rbxassetid://6967760122"
+	script.Parent.MouseButton1Click:Connect(function()
+		local AnimationNew = Instance.new("Animation")
+		AnimationNew.AnimationId = Id
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(AnimationNew)
+		Humanoid:Play()
+	end)
+end
+coroutine.wrap(KRPF_fake_script)()
