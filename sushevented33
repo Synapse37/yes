@@ -1,3 +1,6 @@
+-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
 local sbgui = Instance.new("ScreenGui")
@@ -13,7 +16,7 @@ local Spinbot2 = Instance.new("TextButton")
 --Properties:
 
 sbgui.Name = "sbgui"
-sbgui.Parent = game.Workspace
+sbgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 sbgui_2.Name = "sbgui"
 sbgui_2.Parent = sbgui
@@ -21,8 +24,6 @@ sbgui_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 sbgui_2.Position = UDim2.new(0.704169929, 0, 0.156019658, 0)
 sbgui_2.Size = UDim2.new(0, 233, 0, 357)
 sbgui_2.Style = Enum.FrameStyle.RobloxRound
-sbgui_2.Active = true
-sbgui_2.Draggable = true
 
 Spinbot.Name = "Spinbot"
 Spinbot.Parent = sbgui_2
@@ -34,9 +35,6 @@ Spinbot.Font = Enum.Font.SourceSans
 Spinbot.Text = "Spinbot"
 Spinbot.TextColor3 = Color3.fromRGB(0, 0, 0)
 Spinbot.TextSize = 14.000
-Spinbot.MouseButton1Down:connect(function()
-	Scripthere
-end)
 
 Frame.Parent = sbgui_2
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -48,7 +46,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.Position = UDim2.new(-0.00193983316, 0, -8.41540909, 0)
 TextLabel.Size = UDim2.new(0, 232, 0, 57)
 TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "SYNAPSE's Fake Spinbot"
+TextLabel.Text = "Spinbot [xva synapse#6666]"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 14.000
 
@@ -62,9 +60,6 @@ SCAR20.Font = Enum.Font.SourceSans
 SCAR20.Text = "SCAR-20"
 SCAR20.TextColor3 = Color3.fromRGB(0, 0, 0)
 SCAR20.TextSize = 14.000
-SCAR20.MouseButton1Down:connect(function()
-	Scripthere
-end)
 
 AWP.Name = "AWP"
 AWP.Parent = sbgui_2
@@ -76,9 +71,6 @@ AWP.Font = Enum.Font.SourceSans
 AWP.Text = "AWP"
 AWP.TextColor3 = Color3.fromRGB(0, 0, 0)
 AWP.TextSize = 14.000
-AWP.MouseButton1Down:connect(function()
-	Scripthere
-end)
 
 SSG08.Name = "SSG 08"
 SSG08.Parent = sbgui_2
@@ -90,9 +82,6 @@ SSG08.Font = Enum.Font.SourceSans
 SSG08.Text = "SSG 08"
 SSG08.TextColor3 = Color3.fromRGB(0, 0, 0)
 SSG08.TextSize = 14.000
-SSG08.MouseButton1Down:connect(function()
-	Scripthere
-end)
 
 Spinbot2.Name = "Spinbot 2"
 Spinbot2.Parent = sbgui_2
@@ -101,15 +90,13 @@ Spinbot2.Position = UDim2.new(0.0284895841, 0, 0.335230142, 0)
 Spinbot2.Size = UDim2.new(0, 200, 0, 50)
 Spinbot2.Style = Enum.ButtonStyle.RobloxRoundButton
 Spinbot2.Font = Enum.Font.SourceSans
+Spinbot2.Text = "Spinbot 2"
 Spinbot2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Spinbot2.TextSize = 14.000
-Spinbot2.MouseButton1Down:connect(function()
-	Scripthere
-end)
 
 -- Scripts:
 
-local function DXPJQPE_fake_script() -- Spinbot.LocalScript 
+local function NDBOK_fake_script() -- Spinbot.LocalScript 
 	local script = Instance.new('LocalScript', Spinbot)
 
 	local Id = "rbxassetid://6967760122"
@@ -120,8 +107,8 @@ local function DXPJQPE_fake_script() -- Spinbot.LocalScript
 		Humanoid:Play()
 	end)
 end
-coroutine.wrap(DXPJQPE_fake_script)()
-local function LABRPKA_fake_script() -- Frame.rgb 
+coroutine.wrap(NDBOK_fake_script)()
+local function HPTNHP_fake_script() -- Frame.rgb 
 	local script = Instance.new('LocalScript', Frame)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -134,8 +121,8 @@ local function LABRPKA_fake_script() -- Frame.rgb
 	 counter = counter + 0.01
 	end
 end
-coroutine.wrap(LABRPKA_fake_script)()
-local function XSRTDE_fake_script() -- sbgui_2.LocalScript 
+coroutine.wrap(HPTNHP_fake_script)()
+local function YEEU_fake_script() -- sbgui_2.LocalScript 
 	local script = Instance.new('LocalScript', sbgui_2)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -178,8 +165,8 @@ local function XSRTDE_fake_script() -- sbgui_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XSRTDE_fake_script)()
-local function JXQDL_fake_script() -- SCAR20.LocalScript 
+coroutine.wrap(YEEU_fake_script)()
+local function KHEFP_fake_script() -- SCAR20.LocalScript 
 	local script = Instance.new('LocalScript', SCAR20)
 
 	local p = game.Players.LocalPlayer
@@ -191,8 +178,8 @@ local function JXQDL_fake_script() -- SCAR20.LocalScript
 	
 	end)
 end
-coroutine.wrap(JXQDL_fake_script)()
-local function KPSYPM_fake_script() -- AWP.LocalScript 
+coroutine.wrap(KHEFP_fake_script)()
+local function FCNJRCF_fake_script() -- AWP.LocalScript 
 	local script = Instance.new('LocalScript', AWP)
 
 	local p = game.Players.LocalPlayer
@@ -204,8 +191,8 @@ local function KPSYPM_fake_script() -- AWP.LocalScript
 	
 	end)
 end
-coroutine.wrap(KPSYPM_fake_script)()
-local function UBDVM_fake_script() -- SSG08.LocalScript 
+coroutine.wrap(FCNJRCF_fake_script)()
+local function TMQA_fake_script() -- SSG08.LocalScript 
 	local script = Instance.new('LocalScript', SSG08)
 
 	local p = game.Players.LocalPlayer
@@ -217,11 +204,11 @@ local function UBDVM_fake_script() -- SSG08.LocalScript
 	
 	end)
 end
-coroutine.wrap(UBDVM_fake_script)()
-local function KRPF_fake_script() -- Spinbot2.LocalScript 
+coroutine.wrap(TMQA_fake_script)()
+local function GEML_fake_script() -- Spinbot2.LocalScript 
 	local script = Instance.new('LocalScript', Spinbot2)
 
-	local Id = "rbxassetid://6967760122"
+	local Id = "rbxassetid://6969150178"
 	script.Parent.MouseButton1Click:Connect(function()
 		local AnimationNew = Instance.new("Animation")
 		AnimationNew.AnimationId = Id
@@ -229,4 +216,4 @@ local function KRPF_fake_script() -- Spinbot2.LocalScript
 		Humanoid:Play()
 	end)
 end
-coroutine.wrap(KRPF_fake_script)()
+coroutine.wrap(GEML_fake_script)()
