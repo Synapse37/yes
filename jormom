@@ -1,0 +1,144 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local sbgui = Instance.new("ScreenGui")
+local sbgui_2 = Instance.new("Frame")
+local Spinbot = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Spinbot2 = Instance.new("TextButton")
+
+--Properties:
+
+sbgui.Name = "sbgui"
+sbgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+sbgui_2.Name = "sbgui"
+sbgui_2.Parent = sbgui
+sbgui_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+sbgui_2.Position = UDim2.new(0.704169929, 0, 0.156019643, 0)
+sbgui_2.Size = UDim2.new(0, 233, 0, 177)
+sbgui_2.Style = Enum.FrameStyle.RobloxRound
+
+Spinbot.Name = "Spinbot"
+Spinbot.Parent = sbgui_2
+Spinbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spinbot.Position = UDim2.new(0.0265581645, 0, 0.380689114, 0)
+Spinbot.Size = UDim2.new(0, 200, 0, 50)
+Spinbot.Style = Enum.ButtonStyle.RobloxRoundButton
+Spinbot.Font = Enum.Font.SourceSans
+Spinbot.Text = "Spinbot"
+Spinbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spinbot.TextSize = 14.000
+
+Frame.Parent = sbgui_2
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0, -7, 0, 48)
+Frame.Size = UDim2.new(0, 232, 0, 7)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(-0.00193983316, 0, -8.27255154, 0)
+TextLabel.Size = UDim2.new(0, 232, 0, 57)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Spinbot [synapse#6666]"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+Spinbot2.Name = "Spinbot 2"
+Spinbot2.Parent = sbgui_2
+Spinbot2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spinbot2.Position = UDim2.new(0.0284895841, 0, 0.699484706, 0)
+Spinbot2.Size = UDim2.new(0, 200, 0, 50)
+Spinbot2.Style = Enum.ButtonStyle.RobloxRoundButton
+Spinbot2.Font = Enum.Font.SourceSans
+Spinbot2.Text = "Spinbot 2"
+Spinbot2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spinbot2.TextSize = 14.000
+
+-- Scripts:
+
+local function NBJUECS_fake_script() -- Spinbot.LocalScript 
+	local script = Instance.new('LocalScript', Spinbot)
+
+	local Id = "rbxassetid://6967760122"
+	script.Parent.MouseButton1Click:Connect(function()
+		local AnimationNew = Instance.new("Animation")
+		AnimationNew.AnimationId = Id
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(AnimationNew)
+		Humanoid:Play()
+	end)
+end
+coroutine.wrap(NBJUECS_fake_script)()
+local function HBTRLQ_fake_script() -- Frame.rgb 
+	local script = Instance.new('LocalScript', Frame)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+end
+coroutine.wrap(HBTRLQ_fake_script)()
+local function QODFV_fake_script() -- sbgui_2.LocalScript 
+	local script = Instance.new('LocalScript', sbgui_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(QODFV_fake_script)()
+local function IHADPN_fake_script() -- Spinbot2.LocalScript 
+	local script = Instance.new('LocalScript', Spinbot2)
+
+	local Id = "rbxassetid://6969150178"
+	script.Parent.MouseButton1Click:Connect(function()
+		local AnimationNew = Instance.new("Animation")
+		AnimationNew.AnimationId = Id
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(AnimationNew)
+		Humanoid:Play()
+	end)
+end
+coroutine.wrap(IHADPN_fake_script)()
